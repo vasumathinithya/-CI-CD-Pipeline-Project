@@ -1,0 +1,100 @@
+Set up job
+
+Run details
+
+Current runner version: 2.337.0
+Operating System: Linux
+Secret source: Actions
+Cache mode: write
+
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+
+Download action repository 'actions/checkout@v4'
+Download action repository 'actions/setup-python@v5'
+
+Complete job name: build
+
+
+Checkout code
+
+Run actions/checkout@v4
+
+Syncing repository: vasumathinithya/-CI-CD-Pipeline-Project
+
+Getting Git version info
+Initializing the repository
+Disabling automatic garbage collection
+Setting up auth
+Fetching the repository
+Determining the checkout info
+Checking out the ref
+
+Commit:
+91a51203ccaf46b37170250de3cb9c112cd205aa
+
+
+Set up Python
+
+Run actions/setup-python@v5
+
+Installed versions
+
+
+Install dependencies
+
+Run python -m pip install --upgrade pip
+
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.9.25/x64/lib/python3.9/site-packages
+
+Collecting flake8
+Collecting nose
+Collecting mccabe
+Collecting pycodestyle
+Collecting pyflakes
+
+Downloading flake8-7.3.0
+Downloading mccabe-0.7.0
+Downloading pycodestyle-2.14.0
+Downloading pyflakes-3.4.0
+Downloading nose-1.3.7
+
+Installing collected packages: nose, pyflakes, pycodestyle, mccabe, flake8
+
+Successfully installed flake8-7.3.0 mccabe-0.7.0 nose-1.3.7 pycodestyle-2.14.0 pyflakes-3.4.0
+
+
+Run Flake8
+
+Run flake8 .github/workflows/test_app.py
+
+
+Run unit tests with Nose
+
+Run nosetests -v .github/workflows/test_app.py
+
+test_app.test_addition ... ok
+test_app.test_string ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.0005s
+
+OK
+
+
+Post Set up Python
+
+Post job cleanup.
+
+
+Post Checkout code
+
+Post job cleanup.
+
+git version 2.55.0
+
+
+Complete job
+
+Cleaning up orphan processes

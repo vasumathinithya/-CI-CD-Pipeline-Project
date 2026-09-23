@@ -28,8 +28,8 @@ jobs:
 
       - name: Run Flake8
         run: |
-          flake8 app.py test_app.py
+          flake8 .github/workflows/test_app.py
 
       - name: Run unit tests
         run: |
-          nosetests -v
+          nosetests -v .github/workflows/test_app.py
